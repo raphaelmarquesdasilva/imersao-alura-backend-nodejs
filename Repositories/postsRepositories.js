@@ -3,6 +3,7 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient()
 
 
+ 
 
 export const gettingAllPosts = async () => {
     return await prisma.posts.findMany()
