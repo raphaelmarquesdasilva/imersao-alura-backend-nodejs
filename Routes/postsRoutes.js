@@ -10,7 +10,7 @@ const route = express.Router()
 
 route.get('/', postsControllers.gettingAllPosts)
 route.post('/', postsControllers.postingOnePost)
-route.post('/upload', upload.single("imagem"), postsControllers.uploadingOneImage)
+route.post('/upload', upload.single("image"), postsControllers.uploadingOneImage)
 
 
 export default route
